@@ -3,7 +3,7 @@
 # Modified by Rezin Dilshad
 # 2011-04-28
 # The program takes a number (number of alignmnets you want to keep) and a sam file.
-# Shufles the file and return the randomly selected alignmnets in an output file, starting with down_
+# Shuffles the file and return the randomly selected alignmnets in an output file, starting with down_
 #######################################
 
 import sys
