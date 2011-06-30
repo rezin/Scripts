@@ -13,15 +13,15 @@
 setwd("/Users/rezdil/Documents/RNAseq/HPRsamples/run3")
 #gene, transcript, rpkm, readcount
 
-a1  <-  read.table("cufflinks_htseq_a431_9_1.expr", sep = "\t", header = T)
-b1  <- read.table("cufflinks_htseq_a431_10_1.expr", sep = "\t", header = T)
-a2  <-  read.table("cufflinks_htseq_u2os_3_1.expr", sep = "\t", header = T)
-b2  <- read.table("cufflinks_htseq_u2os_4_1.expr", sep = "\t", header = T)
-a3  <-  read.table("cufflinks_htseq_ u251_lane6.expr", sep = "\t", header = T)
-b3  <- read.table("cufflinks_htseq_u251_lane7.expr", sep = "\t", header = T)
+a1  <-  read.table("cufflinks_htseq_A1_9_1.expr", sep = "\t", header = T)
+b1  <- read.table("cufflinks_htseq_B1_10_1.expr", sep = "\t", header = T)
+a2  <-  read.table("cufflinks_htseq_A2_3_1.expr", sep = "\t", header = T)
+b2  <- read.table("cufflinks_htseq_B2_4_1.expr", sep = "\t", header = T)
+a3  <-  read.table("cufflinks_htseq_A3_lane6.expr", sep = "\t", header = T)
+b3  <- read.table("cufflinks_htseq_B3_lane7.expr", sep = "\t", header = T)
 
 
-hprNames <- c("A431a","A431b","U2OSa","U2OSb","U251a","U251b")
+hprNames <- c("list of names")
 
 noHpr <- 6
 
@@ -99,15 +99,15 @@ cor(tmp$FPKM,tmp3$FPKM)
 
 cor_rpkm <- data.frame(cor_rpkm)
 
-names(cor_rpkm) <- c("A431a","A431b","U2OSa","U2OSb","U251a","U251b")
-row.names(cor_rpkm) <- c("A431a","A431b","U2OSa","U2OSb","U251a","U251b")
+names(cor_rpkm) <- c("list of names")
+row.names(cor_rpkm) <- c("list of names")
 
 write.table(cor_rpkm,"cor_fpkm_run3.csv", sep="\t", row.names = TRUE, col.names=TRUE)
 
 
 freq_data <- data.frame(count,freq)
 names(freq_data) <- c("Count_min","Count_mean","Count_median","Count_max","RPKM_min","RPKM_mean","RPKM_median","RPKM_max")
-row.names(freq_data) <- c("A431a","A431b","U2OSa","U2OSb","U251a","U251b")
+row.names(freq_data) <- c("list of names")
 
 library(gplots)
 pdf("heatmap_corFPKM.pdf")
