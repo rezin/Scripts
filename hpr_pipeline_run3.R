@@ -113,8 +113,3 @@ library(gplots)
 pdf("heatmap_corFPKM.pdf")
 heatmap.2(as.matrix(cor_rpkm),trace="none",cellnote=as.matrix(cor_rpkm),notecol="black",notecex=0.7)
 
-
-library(gplots)
-#heatmap.2(as.matrix(cor_rpkm),trace="none")
-dev.off()
-
