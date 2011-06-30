@@ -1,6 +1,7 @@
+####################
 # Rezin Dilshad
 # 2011-03-07
-# Join Cufflinks genes.expr with htseq.out
+# Joins Cufflinks genes.expr with htseq.out
 ####################
 import sys
 
