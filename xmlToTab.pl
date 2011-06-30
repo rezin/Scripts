@@ -39,11 +39,9 @@ foreach my $elem (@lane){
 		print "";
 	    }
 	    else{
-#		print $param[1] . "\t";
 		print OUT $param[1] . "\t";
 	    }
 	}
-#	print "\n";
 	print OUT "\n";
     }
 }
